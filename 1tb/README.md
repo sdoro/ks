@@ -32,3 +32,16 @@ Partition six is for Ubuntu LTS Xen.
 
 Partitions labels may be changed with `gparted`.
 
+
+	lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT
+	
+	NAME   FSTYPE   SIZE MOUNTPOINT
+	
+	sdX           931.5G 
+	├─sdX1         23.3G /media/user/portable-system
+	├─sdX2          845G /media/user/portable-data
+	├─sdX3          4.7G [SWAP]
+	├─sdX4            1K 
+	├─sdX5         29.3G /media/user/Debian-8
+	└─sdX6         29.3G /media/user/Ubuntu-LTS-Xen
+
